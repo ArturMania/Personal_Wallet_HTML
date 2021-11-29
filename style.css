@@ -1,0 +1,29 @@
+body{
+	background-image: url("background/what-the-hex-dark.png");
+	/* Background pattern from Toptal Subtle Patterns */
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+	color: #e6e6e6;
+}
+
+header{
+	font-size:24px;
+	font-weight:700;
+	padding:5px;
+	color: #e6e6e6;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-top: 2px solid #ffbf00;
+	border-bottom: 2px solid #ffbf00;
+	
+.motto{
+	font-size: 24px;
+	font-style: italic;
+	text-transform: lowercase;
+	font-weight:400;
+}
+
+/*background-color:  #0d0d0d; kolorek na tło pod divy*/
