@@ -31,8 +31,7 @@ h1.head{
 
 p.content{
 	padding-left: 20px;
-	padding-right: 20px;
-	border-bottom: 1px solid #ffbf00;		
+	padding-right: 20px;		
 }
 
 a{
@@ -75,6 +74,7 @@ a:hover{
 	line-height: 1.4;
 	background-color: #0d0d0d;	
 	border-radius: 10px;
+	border-bottom: 1px solid #ffbf00;
 }
 
 .login{
@@ -87,7 +87,21 @@ a:hover{
 	margin-left: 10px;
 	margin-right: auto;
 	background-color: #0d0d0d;
-	border-radius: 10px;	
+	border-radius: 10px;
+	border-bottom: 1px solid #ffbf00;	
+}
+
+.registration{
+	width: 290px;
+	height: 420px;
+	padding: 20px 100px 100px 100px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #0d0d0d;
+	border-radius: 10px;
+	border-bottom: 1px solid #ffbf00;	
 }
 
 .info
@@ -100,7 +114,9 @@ a:hover{
 }
 
 /*___________Stylizacja INPUTÓW___________*/
-input[type=text],input[type=password]{
+input[type=text],input[type=password],input[type=name],input[type=email]{
+	width:300px;
+	width:300px;
 	width:300px;
 	background-color: #404040;
 	color: #e6e6e6;
@@ -113,7 +129,7 @@ input[type=text],input[type=password]{
 	outline: none;
 }
 
-input[type=text]:focus,input[type=password]:focus{
+input[type=text]:focus,input[type=password]:focus,input[type=name]:focus,input[type=email]:focus{
 
 	border: 2px solid #737373;
 	background-color: #a6a6a6;
