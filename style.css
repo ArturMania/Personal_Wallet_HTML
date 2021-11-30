@@ -15,7 +15,7 @@ h1.logo{
 	color: #e6e6e6;
 	letter-spacing: 5px;
 	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	border-top: 3px solid #ffbf00;
 	border-bottom: 3px solid #ffbf00;
 	width: 100%;
@@ -113,6 +113,43 @@ a:hover{
 	background-color: #0d0d0d;
 	border-radius: 10px;
 	border-bottom: 1px solid #ffbf00;	
+}
+/*____________TOP MENU____________*/
+.topmenu{
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	background-color: #0d0d0d;
+	width: 100%;
+}
+
+.menu{
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	font-size: 16px;
+	min-height: 32px;
+	line-height: 200%;
+}
+
+.menu a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu a:hover{
+	color: #ffbf00;	
+}
+
+ul > li{
+	display: inline-block;
+	padding-left:20px;
+	padding-right: 20px;
+	border-right: 1px solid #e6e6e6;
+}
+
+ul > li:first-child{
+	border-left: 1px solid #e6e6e6;
 }
 
 /*____________FOOTER______________*/
