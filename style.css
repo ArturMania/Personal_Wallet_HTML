@@ -128,11 +128,14 @@ a:hover{
 }
 /*____________TOP MENU____________*/
 .topmenu{
+	margin-top:10px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align:center;
 	background-color: #0d0d0d;
 	width: 100%;
+	border-bottom: 1px solid #e6e6e6;
+	border-top: 1px solid #e6e6e6;
 }
 
 .menu{
@@ -151,6 +154,14 @@ a:hover{
 
 .menu a:hover{
 	color: #ffbf00;	
+}
+
+.sticky{
+	width:100%;
+	position: fixed;
+	left:0;
+	top: 0;
+	z-index: 100;
 }
 
 ul > li{
@@ -337,8 +348,10 @@ textarea{
 
 /*____________CHARTY__________*/
 
-#myChart{
+#incomeChart{
 	width:100%;
-	max-width:600px;
-	color: #e6e6e6;
+	max-width:800px;
+	margin-left: auto;
+	margin-right: auto;
+
 }
