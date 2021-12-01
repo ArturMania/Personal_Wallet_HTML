@@ -36,16 +36,121 @@
 	
 	<div class="container3">
 		<header><h1 class="head">Bilans przychodów i wydatków</h1></header>
+			<form action="order.php" method="post" enctype="multipart/form-data">
+				<div id="inter">
+					<label for="interval"> Bilans za:  </label>
+						<select id="interval" name="silnik">
+							
+								<option value="curM" selected>Bieżący miesiąc</option>
+								<option value="lastM">Poprzedni miesiąc</option>
+								<option value="lastY">Bieżący rok</option>
+								<option value="pick">Wybierz okres</option>
+							
+						</select>
+				</div>
+			</form>
+			
+		<div class="tableIncomeSum">
+				<div class="firstColumn">
+					<div class="firstRow"> Suma przychodów </div>
+					<div class="lastRow"> Łącznie </div>
+				</div>
+				<div class="secondColumn">
+					<div class="firstRow"> [PLN] </div>
+					<div class="lastRow"> 100,00 </div>
+				</div>
+        </div>
+		
+		<div class="tableOutcomeSum">
+				<div class="firstColumn">
+					<div class="firstRow"> Suma wydatków </div>
+					<div class="lastRow"> Łącznie </div>
+				</div>
+				<div class="secondColumn">
+					<div class="firstRow"> [PLN] </div>
+					<div class="lastRow"> 1100,00 </div>
+				</div>
+        </div>
+		
+		<div class="balance">
+			<div class="firstColumn" >
+				<div class="firstRow" > Bilans Przychody/Wydatki</div>
+				<div class="lastRow"> Łącznie </div>
+			</div>
+			<div class="secondColumn">
+					<div class="firstRow"> [PLN] </div>
+					<div class="lastRow"> -1000,00 </div>
+			</div>
+		</div>				
 	</div>
 	
 	<div class="container3">
 		<header><h1 class="head">Zestawienie przychodów</h1></header>
+			<div class="table">
+				<div class="firstColumn">
+					<div class="firstRow"> Kategoria </div>
+					<div class="firstRow"> Wynagrodzenie </div>
+					<div class="firstRow"> Odsetki bankowe </div>
+					<div class="firstRow"> Sprzedaż </div>
+					<div class="lastRow"> Inne </div>
+				</div>
+				<div class="secondColumn">
+					<div class="firstRow"> [PLN] </div>
+					<div class="firstRow"> 75,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 20,00 </div>
+					<div class="lastRow"> 45,00</div>
+				</div>
+			</div>						
 		<canvas id="incomeChart" ></canvas>
+				
 	</div>
 	
 	
 	<div class="container3">
 		<header><h1 class="head">Zestawienie wydatków</h1></header>
+			<div class="table">
+				<div class="firstColumn">
+					<div class="firstRow"> Kategoria </div>
+					<div class="firstRow"> Jedzenie </div>
+					<div class="firstRow"> Mieszkanie</div>
+					<div class="firstRow"> Transport </div>
+					<div class="firstRow"> Telekomunikacja </div>
+					<div class="firstRow"> Opieka zdrowotna </div>
+					<div class="firstRow"> Ubrania </div>
+					<div class="firstRow"> Higiena </div>
+					<div class="firstRow"> Dzieci </div>
+					<div class="firstRow"> Rozrywka </div>
+					<div class="firstRow"> Wycieczki </div>
+					<div class="firstRow"> Szkolenia </div>
+					<div class="firstRow"> Książki </div>
+					<div class="firstRow"> Oszczędności </div>
+					<div class="firstRow"> Emerytura </div>
+					<div class="firstRow"> Długi </div>
+					<div class="firstRow"> Darowizny </div>
+					<div class="lastRow"> Inne </div>
+				</div>
+				<div class="secondColumn">
+					<div class="firstRow"> [PLN] </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="firstRow"> 10,00 </div>
+					<div class="lastRow"> 10,00</div>
+				</div>
+			</div>		
 		<canvas id="outcomeChart" ></canvas>
 	</div>
 	
