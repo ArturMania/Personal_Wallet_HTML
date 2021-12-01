@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
 	<meta charset="utf-8"/>
-	<title>Twój Portfel - Strona Główna</title>
+	<title>Twój Portfel - Bilans</title>
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/> 
@@ -11,6 +11,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
 </head>
 
 <body>
@@ -33,11 +36,47 @@
 		</nav>
 	</div>
 	
+	<div class="container3">
+		<header><h1 class="head">Bilans przychodów i wydatków</h1></header>
+		<canvas id="myChart" ></canvas>
+
+	</div>
 	<footer>		
 		<div class="info">
 			Wszelkie prawa zastrzeżone &copy; 2021 Dziękuję za wizytę!
 		</div>	
 	</footer>
+	
+		<script>
+			var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+			var yValues = [55, 49, 44, 24, 15];
+			var barColors = [
+			  "#b91d47",
+			  "#00aba9",
+			  "#2b5797",
+			  "#e8c3b9",
+			  "#1e7145"
+			];
+
+			new Chart("myChart", {
+			  type: "doughnut",
+			  data: {
+				labels: xValues,
+				datasets: [{
+				  backgroundColor: barColors,
+				  borderColor: "rgb(230, 230, 230)",
+				  color: "rgb(230, 230, 230)",
+				  data: yValues
+				}]
+			  },
+			  options: {
+				title: {
+				  display: true,
+				  text: "World Wide Wine Production 2018"
+				}
+			  }
+			});
+		</script>
 
 </body>
 </html>
