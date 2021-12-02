@@ -33,10 +33,45 @@
 		</nav>
 	</div>
 	
-	<div class="container">
-		<main>
+	<div class="container3">
+	<main>
+		<header><h1 class="head">Opis przychodu</h1></header>
 		
-		</main>
+			<form action="order.php" method="post" enctype="multipart/form-data">
+			
+				<div class="row">
+					<label>Wartość przychodu:<input type="number" name="income" step="0.01"></label>
+					<label>Data: <input type="date" name="outcomeDate"></label>
+				</div>
+			
+				<div class="row">
+					<fieldset class="frame">	
+						<legend> Sposób płatności </legend>
+							<div><label><input type="radio" value="1" name="payment" checked> Gotówka </label></div>
+							<div><label><input type="radio" value="2" name="payment"> Karta debetowa </label></div>
+							<div><label><input type="radio" value="3" name="payment"> Karta kredytowa </label></div>
+							<div><label><input type="radio" value="4" name="payment"> Przelew internetowy </label></div>				
+					</fieldset>
+				</div>
+				
+				<div class="row">
+					<fieldset class="frame">
+						<legend>Kategoria wydatku</legend>
+                            <div class="column">
+                                <div class="fieldInput"> <label><input type="radio" name="category" value="1"> Wynagrodzenie </label> </div>
+                                <div class="fieldInput"> <label><input type="radio" name="category" value="2"> Odestki bankowe </label> </div>
+                                <div class="fieldInput"> <label><input type="radio" name="category" value="3"> Sprzedaż allegro </label> </div>               
+								<div class="fieldInput"> <label><input type="radio" name="category" value="17" onclick="appearComment()"> Inne </label> </div>
+								<div class="textInput"> <label><textarea name="coment" rows="3" cols="40"></textarea></label> </div>
+                            </div>
+					</fieldset>
+				</div>
+                     
+				<input type="submit" value="Dodaj przychód">
+				<input type="reset" value="Anuluj">
+				
+			</form>
+	</main>
 	</div>
 	
 	<footer>		
